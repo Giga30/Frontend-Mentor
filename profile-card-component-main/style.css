@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+}
+
+.ball1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.ball2 {
+    position: absolute;
+    top: -60%;
+    left: -17%;
+}
+
+.card{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border-radius: 0 0 9px 9px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card p:nth-child(1) {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 700;
+}
+
+.card p:nth-child(2) {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(270%, 1px);
+    font-weight: 400;
+    color: gray;
+}
+
+.card p:nth-child(3) {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 400;
+    color: gray;
+}
+
+.imgBg {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -94%);
+    background-color: rgb(255, 255, 255);
+
+}
+
+.card p:nth-child(4){
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: small;
+}
+
+.card p:nth-child(5){
+    position: absolute;
+    bottom: 20px;
+    left:50%;
+    transform: translate(-50%);
+    font-size: small;
+}
+
+.card p:nth-child(6){
+    position: absolute;
+    bottom: 20px;
+    left: 100%;
+    transform: translate(-150%);
+    font-size: small;
+}
+
+.card p:nth-child(7){
+    position: absolute;
+    bottom: 40px;
+    left: 35px;
+    font-size: small;
+    font-weight: 700;
+}
+
+.card p:nth-child(8){
+    position: absolute;
+    bottom: 40px;
+    left:50%;
+    transform: translate(-50%);
+    font-size: small;
+    font-weight: 700;
+}
+
+.card p:nth-child(9){
+    position: absolute;
+    bottom: 40px;
+    left: 100%;
+    transform: translate(-220%);
+    font-size: small;
+    font-weight: 700;
+}
+
+img {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 1;
+}
+
+.line {
+    width: 350px;
+    height: 0.5px;
+    background-color: gray;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.pattern {
+    width: 350px;
+    height: 110px;
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -145%);
+    border-radius: 9px 9px 0 0;
+}
