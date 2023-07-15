@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(217, 75%, 95%);
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    display: grid;
+    width: 50vw;
+    height: 65vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+    
+.cube1 {
+    grid-area: 1 / 1 / 2 / 3; 
+    background-color: white;
+    padding: 40px;
+
+}
+.cube2 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: hsl(179, 62%, 43%);
+    padding: 40px;
+}
+.cube3 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: hsl(179, 58%, 54%);
+    padding: 40px;
+}
+
+.cube1 span:nth-child(1) {
+    font-size: x-large;
+    color: hsl(179, 62%, 43%);    
+}
+
+.cube1 span:nth-child(2) {
+    color: hsl(70, 190%, 45%);
+    position: relative;
+    top: 15px;
+    font-size: large;
+    font-weight: 700;
+}
+
+.cube1 span:nth-child(3) {
+    color: rgb(192, 192, 192);
+    position: relative;
+    top: 30px;
+    line-height: 1.4;
+}
+
+.cube2 span:nth-child(1) {
+    font-size: large;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.cube2 span:nth-child(2) {
+    position: relative;
+    font-size: xx-large;
+    top: 10px;
+    color: aliceblue;
+}
+
+.cube2 span:nth-child(3) {
+    font-weight: 400;
+    color: rgb(192, 192, 192);
+    position: relative;
+    top: 5px;
+    left: 12px;
+}
+
+.cube2 span:nth-child(4) {
+    position: relative;
+    top: 13px;
+    color: aliceblue;
+}
+
+.cube2 a {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    padding: 15px 0 15px 0;
+    border-radius: 5px;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: hsl(71, 73%, 54%);
+}
+
+.cube3 span:nth-child(1) {
+    font-size: large;
+    color: aliceblue;
+
+}
+
+.cube3 span:nth-child(2) {
+    color: rgb(192, 192, 192);
+    position: relative;
+    top: 10px;
+}
