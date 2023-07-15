@@ -1,150 +1,135 @@
 * {
-    margin: 0;
     padding: 0;
-    overflow: hidden;
+    margin: 0;
 }
 
 body {
-    background-color: hsl(185, 75%, 39%);
+    background: hsl(185, 75%, 39%);
+    font-family: "Kumbh Sans", sans-serif;
+    overflow: hidden;
 }
 
 .ball1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: -50%;
+    left: -20%;
+    z-index: -2;
 }
-
+  
 .ball2 {
     position: absolute;
-    top: -60%;
-    left: -17%;
+    bottom: -50%;
+    right: -20%;
+    z-index: -2;
 }
 
-.card{
+.container div:nth-child(2) img:nth-child(1) {
     position: absolute;
-    width: 350px;
-    height: 250px;
-    background-color: white;
-    border-radius: 0 0 9px 9px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -20%);
-    font-family: 'Kumbh Sans', sans-serif;
+    transform: translate(-50%, -130%);
+    border-radius: 9px 9px 0 0;
 }
 
-.card p:nth-child(1) {
+.container div:nth-child(2) img:nth-child(2) {
     position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%);
-    font-weight: 700;
-}
-
-.card p:nth-child(2) {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(270%, 1px);
-    font-weight: 400;
-    color: gray;
-}
-
-.card p:nth-child(3) {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    font-weight: 400;
-    color: gray;
-}
-
-.imgBg {
-    position: absolute;
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -94%);
-    background-color: rgb(255, 255, 255);
-
-}
-
-.card p:nth-child(4){
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    font-size: small;
-}
-
-.card p:nth-child(5){
-    position: absolute;
-    bottom: 20px;
-    left:50%;
-    transform: translate(-50%);
-    font-size: small;
-}
-
-.card p:nth-child(6){
-    position: absolute;
-    bottom: 20px;
-    left: 100%;
-    transform: translate(-150%);
-    font-size: small;
-}
-
-.card p:nth-child(7){
-    position: absolute;
-    bottom: 40px;
-    left: 35px;
-    font-size: small;
-    font-weight: 700;
-}
-
-.card p:nth-child(8){
-    position: absolute;
-    bottom: 40px;
-    left:50%;
-    transform: translate(-50%);
-    font-size: small;
-    font-weight: 700;
-}
-
-.card p:nth-child(9){
-    position: absolute;
-    bottom: 40px;
-    left: 100%;
-    transform: translate(-220%);
-    font-size: small;
-    font-weight: 700;
-}
-
-img {
-    position: absolute;
-    border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -100%);
-    z-index: 1;
+    border-radius: 50%;
+    border: 7px solid white;
+}
+
+.card {
+    width: 350px;
+    height: 400px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    z-index: -1;
+    border-radius: 0 0 9px 9px;
+    
+    box-sizing: border-box;
 }
 
 .line {
-    width: 350px;
+    width: 100%;
     height: 0.5px;
-    background-color: gray;
+    background-color: black;
     position: absolute;
-    top: 65%;
+    top: 75%;
+    z-index: 2;
+}
+
+.stats ul {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: -350px;
+    list-style-type: none;
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+
+.stats h3 {
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%);
 }
 
-.pattern {
-    width: 350px;
-    height: 110px;
-    background-color: aqua;
+.stats h3 span {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.stats p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -145%);
-    border-radius: 9px 9px 0 0;
+    transform: translate(-50%, 200%);
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+
+.flw {
+
+    left: -30%;
+    display: block;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1.5;
+    position: static;
+  }
+
+.lks {
+
+    left: -3%;
+    display: block;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1.5;
+}
+
+.phts {
+    left: -3%;
+    display: block;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1.5;
+
+}
+
+.stats ul li:nth-child(1) {
+    text-align: center;
+}
+
+.stats ul li:nth-child(2) {
+    text-align: center;
+}
+.stats ul li:nth-child(3) {
+    text-align: center;
 }
